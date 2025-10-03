@@ -36,6 +36,66 @@ export default function Home() {
           This is Stephen’s first live Next.js site deployed on Vercel 🚀
         </p>
       </section>
+
+      {/* Contact Section */}
+      <section
+        style={{
+          padding: "40px",
+          textAlign: "center",
+          backgroundColor: "white",
+          marginTop: "auto",
+        }}
+      >
+        <h2 style={{ fontSize: "2rem", marginBottom: "20px" }}>📬 Contact Me</h2>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "20px",
+            flexWrap: "wrap",
+            fontSize: "1.1rem",
+          }}
+        >
+          <a href="mailto:vdjblessing@gmail.com" style={{ color: "#2563eb" }}>
+            Email
+          </a>
+          <a
+            href="https://wa.me/17742533879"
+            target="_blank"
+            style={{ color: "#25D366" }}
+          >
+            WhatsApp
+          </a>
+          <a
+            href="https://instagram.com/@kstevox"
+            target="_blank"
+            style={{ color: "#E1306C" }}
+          >
+            Instagram
+          </a>
+          <a
+            href="https://twitter.com/Steve Bariki"
+            target="_blank"
+            style={{ color: "#1DA1F2" }}
+          >
+            Twitter
+          </a>
+          <a
+            href="https://tiktok.com/@kstevok"
+            target="_blank"
+            style={{ color: "black" }}
+          >
+            TikTok
+          </a>
+          <a
+            href="https://facebook.com/Steve Kyerrie"
+            target="_blank"
+            style={{ color: "#1877F2" }}
+          >
+            Facebook
+          </a>
+        </div>
+      </section>
     </main>
   );
 }
