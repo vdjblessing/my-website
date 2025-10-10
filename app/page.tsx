@@ -1,101 +1,63 @@
-"use client";
-
 export default function Home() {
   return (
-    <main
+    <section
       style={{
-        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "#f9fafb",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "100vh",
         fontFamily: "Arial, sans-serif",
+        textAlign: "center",
       }}
     >
-      {/* Navigation Bar */}
-      <nav
+      <h1 style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>
+        The Blessing Lab
+      </h1>
+
+      <p
         style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "20px 40px",
-          backgroundColor: "#2563eb",
-          color: "white",
-          fontSize: "20px",
-          fontWeight: "bold",
+          fontSize: "1.25rem",
+          color: "#555",
+          maxWidth: "600px",
         }}
       >
-        Stephen’s Website
-      </nav>
+        Hi, I’m Stephen — a Registered Nurse & web creator. I build clean,
+        modern sites for small businesses and creators.
+      </p>
 
-      {/* Hero Section */}
-      <section style={{ padding: "60px", textAlign: "center" }}>
-        <h1 style={{ fontSize: "2.5rem", marginBottom: "20px" }}>
-          Hello World 🌍
-        </h1>
-        <p style={{ fontSize: "1.2rem", color: "#555" }}>
-          This is Stephen’s first live Next.js site deployed on Vercel 🚀
-        </p>
-      </section>
-
-      {/* Contact Section */}
-      <section
-        style={{
-          padding: "40px",
-          textAlign: "center",
-          backgroundColor: "white",
-          marginTop: "auto",
-        }}
-      >
-        <h2 style={{ fontSize: "2rem", marginBottom: "20px" }}>📬 Contact Me</h2>
-        <div
+      <div style={{ marginTop: "20px", display: "flex", gap: "12px" }}>
+        <a
+          href="mailto:info@theblessinglab.com"
           style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "20px",
-            flexWrap: "wrap",
-            fontSize: "1.1rem",
+            padding: "10px 16px",
+            backgroundColor: "#2563eb",
+            color: "white",
+            borderRadius: "999px",
+            textDecoration: "none",
+            fontWeight: "bold",
           }}
         >
-          <a href="mailto:vdjblessing@gmail.com" style={{ color: "#2563eb" }}>
-            Email
-          </a>
-          <a
-            href="https://wa.me/17742533879"
-            target="_blank"
-            style={{ color: "#25D366" }}
-          >
-            WhatsApp
-          </a>
-          <a
-            href="https://instagram.com/@kstevox"
-            target="_blank"
-            style={{ color: "#E1306C" }}
-          >
-            Instagram
-          </a>
-          <a
-            href="https://twitter.com/Steve Bariki"
-            target="_blank"
-            style={{ color: "#1DA1F2" }}
-          >
-            Twitter
-          </a>
-          <a
-            href="https://tiktok.com/@kstevok"
-            target="_blank"
-            style={{ color: "black" }}
-          >
-            TikTok
-          </a>
-          <a
-            href="https://facebook.com/Steve Kyerrie"
-            target="_blank"
-            style={{ color: "#1877F2" }}
-          >
-            Facebook
-          </a>
-        </div>
-      </section>
-    </main>
+          📧 Email Me
+        </a>
+
+        <a
+          href="https://wa.me/1XXXXXXXXXX" // 👈 replace this with your WhatsApp number
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: "10px 16px",
+            border: "2px solid #2563eb",
+            color: "#2563eb",
+            borderRadius: "999px",
+            textDecoration: "none",
+            fontWeight: "bold",
+          }}
+        >
+          💬 WhatsApp
+        </a>
+      </div>
+    </section>
   );
 }
+
