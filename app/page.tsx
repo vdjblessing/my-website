@@ -29,7 +29,7 @@ export default function Home() {
         
       </nav>
 
-      {/* Hero Banner Section */}
+            {/* Hero Banner Section */}
       <div
         style={{
           display: "flex",
@@ -56,44 +56,81 @@ export default function Home() {
             lineHeight: "1.6",
           }}
         >
-          Creativity, health, and purpose — building impactful digital spaces
-          that connect people and ideas.
+          Empowering people through health, creativity, and connection.
         </p>
 
-        <div style={{ display: "flex", gap: "20px" }}>
-          <a
-            href="mailto:info@theblessinglab.com"
-            style={{
-              padding: "14px 28px",
-              backgroundColor: "#fff",
-              color: "#2563eb",
-              borderRadius: "999px",
-              textDecoration: "none",
-              fontWeight: "bold",
-              transition: "all 0.3s ease",
-            }}
-          >
-            📧 Email Me
-          </a>
+        {/* Primary Contact Button */}
+        <a
+          href="https://facebook.com/Steve Kyerrie" // 🔁 replace with your Facebook page URL
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            padding: "14px 28px",
+            backgroundColor: "#fff",
+            color: "#2563eb",
+            borderRadius: "999px",
+            textDecoration: "none",
+            fontWeight: "bold",
+            fontSize: "1.2rem",
+            transition: "all 0.3s ease",
+            marginBottom: "20px",
+          }}
+        >
+          📘 Connect on Facebook
+        </a>
 
+        {/* Other Social Media Icons */}
+        <div style={{ display: "flex", gap: "20px", marginTop: "10px" }}>
           <a
-            href="https://wa.me/15551234567" // replace with your number
+            href="https://instagram.com/kstevox" // 🔁 replace with your Instagram
             target="_blank"
             rel="noopener noreferrer"
             style={{
-              padding: "14px 28px",
-              border: "2px solid white",
               color: "#fff",
-              borderRadius: "999px",
+              fontSize: "1.5rem",
               textDecoration: "none",
-              fontWeight: "bold",
-              transition: "all 0.3s ease",
+              border: "2px solid white",
+              padding: "10px 18px",
+              borderRadius: "999px",
             }}
           >
-            💬 WhatsApp
+            📸 Instagram
+          </a>
+
+          <a
+            href="https://tiktok.com/@kstevok" // 🔁 replace with your TikTok
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#fff",
+              fontSize: "1.5rem",
+              textDecoration: "none",
+              border: "2px solid white",
+              padding: "10px 18px",
+              borderRadius: "999px",
+            }}
+          >
+            🎶 TikTok
+          </a>
+
+          <a
+            href="https://youtube.com/@kstevok" // 🔁 replace with your YouTube
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              color: "#fff",
+              fontSize: "1.5rem",
+              textDecoration: "none",
+              border: "2px solid white",
+              padding: "10px 18px",
+              borderRadius: "999px",
+            }}
+          >
+            ▶️ YouTube
           </a>
         </div>
       </div>
+
 
       {/* About Me Section */}
       <section
