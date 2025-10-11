@@ -1,3 +1,4 @@
+import LatestContent from "./Components/LatestContent";
 export default function Home() {
   return (
     <section
@@ -152,31 +153,159 @@ export default function Home() {
       </section>
 
       {/* What I Do Section */}
+            {/* Latest Content Section */}
       <section
-        id="services"
+        id="latest"
         style={{
-          marginTop: "80px",
+          marginTop: "100px",
           textAlign: "center",
-          maxWidth: "700px",
+          maxWidth: "1100px",
           margin: "0 auto",
+          padding: "0 1rem",
         }}
       >
-        <h2 style={{ fontSize: "2rem", marginBottom: "1rem" }}>What I Do</h2>
-        <ul
+        <h2 style={{ fontSize: "2.5rem", marginBottom: "2rem" }}>Latest Content</h2>
+
+        <div
           style={{
-            listStyle: "none",
-            padding: 0,
-            fontSize: "1.1rem",
-            color: "#555",
-            lineHeight: "1.8",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gap: "30px",
           }}
         >
-          <li>📱 Content Creation & Social Media Management</li>
-          <li>🩺 Health & Wellness Consulting</li>
-          <li>🎨 Creative Digital Branding</li>
-          <li>📰 News Outlets & Commentary</li>
-        </ul>
+          {/* Card 1 - YouTube */}
+          <div
+            style={{
+              background: "#f9f9f9",
+              borderRadius: "16px",
+              padding: "20px",
+              boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+              textAlign: "left",
+              transition: "transform 0.3s ease",
+            }}
+          >
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>🎥 YouTube Feature</h3>
+            <p style={{ fontSize: "1rem", color: "#555", marginBottom: "1rem" }}>
+              Watch my latest video where I explore creativity, connection, and health in action.
+            </p>
+            <a
+              href="https://youtube.com/@kstevok"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#2563eb",
+                fontWeight: "bold",
+                textDecoration: "none",
+              }}
+            >
+              ▶️ Watch Now
+            </a>
+          </div>
+
+          {/* Card 2 - Health Tips */}
+          <div
+            style={{
+              background: "#f9f9f9",
+              borderRadius: "16px",
+              padding: "20px",
+              boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+              textAlign: "left",
+              transition: "transform 0.3s ease",
+            }}
+          >
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>🩺 Health Tips & Blog</h3>
+            <p style={{ fontSize: "1rem", color: "#555", marginBottom: "1rem" }}>
+              Practical tips for living healthier and bringing wellness into your daily life.
+            </p>
+            <a
+              href="https://facebook.com/Steve Kyerrie"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#2563eb",
+                fontWeight: "bold",
+                textDecoration: "none",
+              }}
+            >
+              📖 Read More
+            </a>
+          </div>
+
+          {/* Card 3 - Social Media Content */}
+          <div
+            style={{
+              background: "#f9f9f9",
+              borderRadius: "16px",
+              padding: "20px",
+              boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+              textAlign: "left",
+              transition: "transform 0.3s ease",
+            }}
+          >
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>📱 Social Media Highlights</h3>
+            <p style={{ fontSize: "1rem", color: "#555", marginBottom: "1rem" }}>
+              Explore my latest Instagram and TikTok posts on creativity, entrepreneurship, and impact.
+            </p>
+            <a
+              href="https://instagram.com/kstevox"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#2563eb",
+                fontWeight: "bold",
+                textDecoration: "none",
+              }}
+            >
+              📸 View Instagram
+            </a>
+            <br />
+            <a
+              href="https://tiktok.com/@kstevok"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#2563eb",
+                fontWeight: "bold",
+                textDecoration: "none",
+                marginTop: "8px",
+                display: "inline-block",
+              }}
+            >
+              🎶 Watch TikTok
+            </a>
+          </div>
+
+          {/* Card 4 - News & Commentary */}
+          <div
+            style={{
+              background: "#f9f9f9",
+              borderRadius: "16px",
+              padding: "20px",
+              boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+              textAlign: "left",
+              transition: "transform 0.3s ease",
+            }}
+          >
+            <h3 style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>📰 News & Commentary</h3>
+            <p style={{ fontSize: "1rem", color: "#555", marginBottom: "1rem" }}>
+              My perspective on current events and topics shaping health, creativity, and society.
+            </p>
+            <a
+              href="https://facebook.com/Steve Kyerrie"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "#2563eb",
+                fontWeight: "bold",
+                textDecoration: "none",
+              }}
+            >
+              🗞️ Read Articles
+            </a>
+          </div>
+        </div>
       </section>
+  
 
       {/* Contact Me Section */}
       <section
@@ -265,6 +394,10 @@ export default function Home() {
           </button>
         </form>
       </section>
+
+      {/* Latest Content Section */}
+      <LatestContent />
+
     </section>
   );
 }

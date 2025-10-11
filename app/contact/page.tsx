@@ -1,55 +1,45 @@
-export default function Contact() {
+"use client";
+
+import LatestContent from "./Components/LatestContent";
+
+export default function Home() {
   return (
     <section
       style={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        justifyContent: "center",
-        height: "100vh",
         fontFamily: "Arial, sans-serif",
+        textAlign: "center",
+        padding: "2rem",
       }}
     >
-      <h1>Contact Me</h1>
-      <p>Let’s connect! You can reach me on any of the platforms below:</p>
+      <h1>Welcome to The Blessing Lab</h1>
+      <p>Empowering people through health, creativity, and connection.</p>
 
-      <ul style={{ listStyle: "none", padding: 0 }}>
-        <li>
-          <a href="mailto:vdjblessing@gmail.com" target="_blank">
-            📧 Email
-          </a>
-        </li>
-        <li>
-          <a href="https://wa.me/1234567890" target="_blank">
-            💬 WhatsApp
-          </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/YOUR_USERNAME" target="_blank">
-            📸 Instagram
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/YOUR_USERNAME" target="_blank">
-            🐦 Twitter (X)
-          </a>
-        </li>
-        <li>
-          <a href="https://www.tiktok.com/@YOUR_USERNAME" target="_blank">
-            🎵 TikTok
-          </a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/YOUR_USERNAME" target="_blank">
-            👍 Facebook
-          </a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/@YOUR_CHANNEL" target="_blank">
-            ▶ YouTube
-          </a>
-        </li>
-      </ul>
+      {/* 📬 Contact Section */}
+      <div style={{ marginTop: "2rem" }}>
+        <h2>Contact Me</h2>
+        <form
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            maxWidth: "400px",
+            width: "100%",
+            gap: "0.5rem",
+          }}
+        >
+          <input type="text" placeholder="Name" required />
+          <input type="email" placeholder="Email" required />
+          <textarea placeholder="Message" rows={4}></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+      {/* 🩺 Latest Health Insights Section */}
+      <div style={{ marginTop: "4rem", width: "100%" }}>
+        <LatestContent />
+      </div>
     </section>
   );
 }
